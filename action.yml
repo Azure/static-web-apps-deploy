@@ -1,0 +1,24 @@
+name: 'Azure Static Apps Deploy'
+description: 'Deploys an application to Azure Static Apps'
+branding:
+  icon: 'upload-cloud'  
+  color: 'blue'
+inputs:
+  azure_static_apps_api_token:
+    description: 'Required API token'
+    required: true
+  action:
+    description: 'Action to perform'
+    required: true
+  app_location:
+    description: 'Directory location of the application source code'
+    required: true
+  api_location:
+    description: 'Directory location of the Azure Functions source code'
+    required: false
+  app_artifact_location:
+    description: 'Directory location of the compiled application code after building'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
