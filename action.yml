@@ -1,11 +1,11 @@
-name: 'Azure Static Apps Deploy'
-description: 'Deploys an application to Azure Static Apps'
+name: 'Azure Static Web Apps Deploy'
+description: 'Deploys an application to Azure Static Web Apps'
 branding:
   icon: 'upload-cloud'  
   color: 'blue'
 inputs:
-  azure_static_apps_api_token:
-    description: 'Required API token'
+  azure_static_web_apps_api_token:
+    description: 'Required token'
     required: true
   action:
     description: 'Action to perform'
