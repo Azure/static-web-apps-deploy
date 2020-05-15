@@ -4,20 +4,32 @@ branding:
   icon: 'upload-cloud'  
   color: 'blue'
 inputs:
-  azure_static_web_apps_api_token:
-    description: 'Required token'
-    required: true
   action:
     description: 'Action to perform'
     required: true
   app_location:
     description: 'Directory location of the application source code'
     required: true
+  azure_static_web_apps_api_token:
+    description: 'Required token'
+    required: true
+  api_build_command:
+    description: 'Custom command for Oryx to run when building Azure Functions source code'
+    required: false
   api_location:
     description: 'Directory location of the Azure Functions source code'
     required: false
   app_artifact_location:
     description: 'Directory location of the compiled application code after building'
+    required: false
+  app_build_command:
+    description: 'Custom command for Oryx to run when building application source code'
+    required: false
+  repo_token:
+    description: 'Token for interacting with the Github repository. Currently used only for commenting on Pull Requests.'
+    required: false
+  routes_location:
+    description: 'Directory location where the routes.json file can be found in the source code'
     required: false
 runs:
   using: 'docker'
