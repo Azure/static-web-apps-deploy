@@ -2,6 +2,7 @@
 
 This Github Action enables developers to build and publish their applications to Azure App Service Static Web Apps. This action utilizes [Oryx](https://github.com/microsoft/Oryx) to detect and build an application, then uploads the resulting application content, as well as any Azure Functions, to Azure. You can find more information about the available options and expected behavior of this action in our documentation [here](https://aka.ms/swadocs).
 
+## Issues and Feedback
 If you’d like to report an issue or provide feedback, please create issues against this [repository](https://github.com/azure/static-web-apps).
 
 # Contributing
