@@ -20,7 +20,7 @@ inputs:
     description: 'Directory location of the compiled application code after building'
     required: false
 outputs:
-  static_web_app_deploy_url:
+  static_web_app_url:
     description: 'Url of the application'
 runs:
   using: 'docker'
