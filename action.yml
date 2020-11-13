@@ -20,6 +20,9 @@ inputs:
     description: "Directory location of the Azure Functions source code"
     required: false
   app_artifact_location:
+    description: "Identical in use to output_location"
+    required: false
+  output_location:
     description: "Directory location of the compiled application code after building"
     required: false
   app_build_command:
