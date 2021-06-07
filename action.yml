@@ -37,6 +37,9 @@ inputs:
   skip_app_build:
     description: "Skips the build step for the application source code if set to true."
     required: false
+  config_file_location:
+    description: "Directory location where the staticwebapp.config.json file can be found in the source code"
+    required: false
 outputs:
   static_web_app_url:
     description: "Url of the application"
