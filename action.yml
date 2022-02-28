@@ -31,6 +31,12 @@ inputs:
   routes_location:
     description: "Directory location where the routes.json file can be found in the source code"
     required: false
+  production_branch:
+    description: "Production branch. When specified, deployments from other branches will be staging environments."
+    required: false
+  deployment_environment:
+    description: "Name of Azure Static Web Apps environment for this deployment."
+    required: false
 outputs:
   static_web_app_url:
     description: "Url of the application"
