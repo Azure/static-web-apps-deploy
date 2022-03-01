@@ -40,6 +40,10 @@ inputs:
   production_branch:
     description: "Production branch. Deploys from other branches will be considered staging environments."
     required: false
+  deployment_environment:
+    description: "Name of Azure Static Web Apps environment for this deployment."
+    required: false
+    
 outputs:
   static_web_app_url:
     description: "Url of the application"
