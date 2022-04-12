@@ -43,10 +43,10 @@ inputs:
   skip_api_build:
     description: "Skips the build step for the Azure Functions source code if set to true."
   production_branch:
-    description: "Production branch. Deploys from other branches will be considered staging environments."
+    description: "Production branch. Deployments from other branches will be considered preview environments."
     required: false
   deployment_environment:
-    description: "Name of Azure Static Web Apps environment for this deployment."
+    description: "Explicit name of Azure Static Web Apps environment for this deployment."
     required: false
 
 outputs:
