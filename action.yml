@@ -44,10 +44,10 @@ inputs:
     description: "Skips the build step for the Azure Functions source code if set to true."
     required: false
   production_branch:
-    description: "Production branch. Deployments from other branches will be considered preview environments."
+    description: "When specified, deployments from other branches will be considered preview environments."
     required: false
   deployment_environment:
-    description: "Explicit name of Azure Static Web Apps environment for this deployment."
+    description: "Name of the Azure Static Web Apps environment to deploy to."
     required: false
 outputs:
   static_web_app_url:
