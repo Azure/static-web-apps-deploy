@@ -28,9 +28,6 @@ inputs:
   app_build_command:
     description: "Custom command for Oryx to run when building application source code"
     required: false
-  is_static_export:
-    description: "Indicates site is static export if set to true."
-    required: false
   repo_token:
     description: "Token for interacting with the Github repository. Currently used only for commenting on Pull Requests."
     required: false
@@ -51,6 +48,9 @@ inputs:
     required: false
   deployment_environment:
     description: "Name of the Azure Static Web Apps environment to deploy to."
+    required: false
+  is_static_export:
+    description: "Indicates you are using `next export` to generate a static site if set to true."
     required: false
 outputs:
   static_web_app_url:
