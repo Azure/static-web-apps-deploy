@@ -49,6 +49,9 @@ inputs:
   deployment_environment:
     description: "Name of the Azure Static Web Apps environment to deploy to."
     required: false
+  is_static_export:
+    description: "Indicates you are using `next export` to generate a static site if set to true."
+    required: false
 outputs:
   static_web_app_url:
     description: "Url of the application"
