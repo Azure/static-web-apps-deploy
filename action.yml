@@ -20,6 +20,9 @@ inputs:
     description: "Directory location of the Azure Functions source code"
     required: false
   app_artifact_location:
+    description: "Identical in use to output_location"
+    required: false
+  output_location:
     description: "Directory location of the compiled application code after building"
     required: false
   app_build_command:
@@ -31,9 +34,28 @@ inputs:
   routes_location:
     description: "Directory location where the routes.json file can be found in the source code"
     required: false
+  skip_app_build:
+    description: "Skips the build step for the application source code if set to true."
+    required: false
+  config_file_location:
+    description: "Directory location where the staticwebapp.config.json file can be found in the source code"
+    required: false
+  skip_api_build:
+    description: "Skips the build step for the Azure Functions source code if set to true."
+    required: false
+  production_branch:
+    description: "When specified, deployments from other branches will be considered preview environments."
+    required: false
+  deployment_environment:
+    description: "Name of the Azure Static Web Apps environment to deploy to."
+    required: false
+  is_static_export:
+    description: "Indicates you are using `next export` to generate a static site if set to true."
+    required: false
 outputs:
   static_web_app_url:
     description: "Url of the application"
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "docker://mcr.microsoft.com/appsvc/staticappsclient:latest"
+  entrypoint: "/entrypoint.sh"
