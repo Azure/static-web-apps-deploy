@@ -54,7 +54,7 @@ inputs:
     required: false
 outputs:
   static_web_app_url:
-    description: "Url of the application"
+    description: "Url of the static web application"
 runs:
   using: "docker"
   image: "docker://mcr.microsoft.com/appsvc/staticappsclient:latest"
