@@ -53,5 +53,5 @@ outputs:
   static_web_app_url:
     description: "Url of the application"
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  image: "docker://mcr.microsoft.com/appsvc/staticappsclient:stable"
+  entrypoint: "/entrypoint.sh"
