@@ -57,5 +57,4 @@ outputs:
     description: "Url of the application"
 runs:
   using: "docker"
-  image: "docker://mcr.microsoft.com/appsvc/staticappsclient:latest"
-  entrypoint: "/entrypoint.sh"
+  image: "Dockerfile"
