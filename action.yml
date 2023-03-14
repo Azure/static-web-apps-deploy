@@ -52,6 +52,9 @@ inputs:
   is_static_export:
     description: "Indicates you are using `next export` to generate a static site if set to true."
     required: false
+  data_api_location:
+    description: "Directory location of the Data API configuration files"
+    required: false
 outputs:
   static_web_app_url:
     description: "Url of the application"
