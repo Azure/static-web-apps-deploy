@@ -55,6 +55,9 @@ inputs:
   data_api_location:
     description: "Directory location of the Data API configuration files"
     required: false
+  github_id_token:
+    description: "GitHub Auth id token"
+    required: false
 outputs:
   static_web_app_url:
     description: "Url of the application"
